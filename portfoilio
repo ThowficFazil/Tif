@@ -59,28 +59,43 @@
 <body>
     <div class="header">
         <h1>Thowfic Ibrahim Fazil</h1>
-        <p>Creative Visual Storyteller | Cybersecurity Enthusiast</p>
+        <p>Creative Visual Storyteller | Dynamic compositions and crafing complling narrative throgh videos</p>
     </div>
 
     <div class="content">
         <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
-            <p>I am a creative photographer, cinematographer, and cybersecurity enthusiast with a passion for capturing dynamic compositions and crafting compelling narratives. With a Bachelor of Science in Forensic Science from Jain University, I seek to merge creativity and technical expertise in innovative projects.</p>
+            <p>I am a creative photographer and cinematographer with a passion for capturing dynamic compositions and crafting compelling narratives. With a Bachelor of Science in Forensic Science from Jain University, I seek to merge creativity and technical expertise in innovative projects.</p>
         </div>
 
         <!-- Gallery Section -->
         <div class="section">
             <h2>Gallery</h2>
             <div class="gallery">
-                <img src="path/to/your/photo1.jpg" alt="Photography work">
-                <img src="path/to/your/photo2.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_1.jpg" alt="car with wide angle Photography">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_2.jpg" alt="Photography">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_3.jpg" alt="Two men sitting back-to-back on a rooftop under a cloudy sunset sky, symbolizing contrasting perspectives">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_4.jpg" alt="Monochrome scene of a rustic room with three men working under an exposed wooden roof, illuminated by natural light">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_5.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_6.jpg" alt="Photography of a dog">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_7.jpg" alt="Monochrome scene of a rustic room with three men working under an exposed wooden roof, illuminated by natural light">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_9.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_12.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_15.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_18.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_16.jpg" alt="Photography work">
+                <img src=""C:\Users\dell\Desktop\portfoilo\IMG_19.jpg" alt="Photography work">
                 <video controls>
-                    <source src="path/to/your/video1.mp4" type="video/mp4">
+                    <source src=""C:\Users\dell\Desktop\portfoilo\IMG_22.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <video controls>
-                    <source src="path/to/your/video2.mp4" type="video/mp4">
+                    <source src=""C:\Users\dell\Desktop\portfoilo\IMG_21.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src=""C:\Users\dell\Desktop\portfoilo\IMG_20.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -133,6 +148,10 @@
         <!-- Contact Section -->
         <div class="contact">
             <h2>Contact</h2>
+            <p>Follow my photography journey on Instagram:</p>
+            <p><a href="https://www.instagram.com/your_instagram_id" target="_blank" style="text-decoration: none; color: #833AB4;">
+            <strong>@captures.of.tif</strong>
+            </a></p>
             <p>Email: <a href="mailto:thowficibrahimfazil@gmail.com">thowficibrahimfazil@gmail.com</a></p>
             <p>Phone: 9342790750</p>
             <p>Location: Chennai, Tamil Nadu</p>
