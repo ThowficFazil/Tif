@@ -44,22 +44,26 @@
             color: #007acc;
             text-decoration: none;
         }
+
+        /* Updated gallery styles */
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 1rem;
         }
-        .gallery img, .gallery video {
+
+        .gallery img {
             width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
+            height: auto; /* Ensure the image maintains its original aspect ratio */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Thowfic Ibrahim Fazil</h1>
-        <p>Creative Visual Storyteller | Dynamic compositions and crafing complling narrative throgh videos</p>
+        <p>Creative Visual Storyteller | Dynamic compositions and crafting compelling narrative through videos</p>
     </div>
 
     <div class="content">
@@ -74,6 +78,12 @@
             <h2>Gallery</h2>
             <div class="gallery">
                 <img src="image/IMG_1.jpg" alt="car with wide angle Photography">
+                <img src="image/IMG_9.jpg" alt="A person sitting against floral-patterned wallpaper with blue and pink lighting, face obscured by a red overlay">
+                <img src="image/IMG_12.jpg" alt="A person sitting against intricate wallpaper with dramatic red and purple lighting, wearing a dark suit">
+                <img src="image/IMG_15.jpg" alt="Man in a navy blazer adjusting his collar with an intense and confident expression">
+                <img src="image/IMG_18.jpg" alt="Stylish man leaning against a reflective surface with dramatic lighting and shadows">
+                <img src="image/IMG_16.jpg" alt="Elegant woman in traditional attire standing outdoors with a serene expression">
+                <img src="image/IMG_19.jpg" alt="Woman in a red saree looking over her shoulder with long black hair flowing down">
                 <img src="image/IMG_2.jpg" alt="Creative street photography capturing vibrant colors and candid urban life moments">
                 <img src="image/IMG_3.jpg" alt="Two men sitting back-to-back on a rooftop under a cloudy sunset sky, symbolizing contrasting perspectives">
                 <img src="image/IMG_4.jpg" alt="Monochrome scene, illuminated by natural light">
@@ -81,12 +91,6 @@
                 <img src="image/IMG_6.jpg" alt="Photography of a dog">
                 <img src="image/IMG_7.jpg" alt="Monochrome scene of a rustic room with three men working under an exposed wooden roof, illuminated by natural light">
                 <img src="image/IMG_8.jpg" alt="A small, single-story house with a slanted roof and a parked motorcycle in front, in black and white">
-                <img src="image/IMG_9.jpg" alt="A person sitting against floral-patterned wallpaper with blue and pink lighting, face obscured by a red overlay">
-                <img src="image/IMG_12.jpg" alt="A person sitting against intricate wallpaper with dramatic red and purple lighting, wearing a dark suit">
-                <img src="image/IMG_15.jpg" alt="Man in a navy blazer adjusting his collar with an intense and confident expression">
-                <img src="image/IMG_18.jpg" alt="Stylish man leaning against a reflective surface with dramatic lighting and shadows">
-                <img src="image/IMG_16.jpg" alt="Elegant woman in traditional attire standing outdoors with a serene expression">
-                <img src="image/IMG_19.jpg" alt="Woman in a red saree looking over her shoulder with long black hair flowing down">
                 <video controls>
                     <source src="./IMG_20.mp4" type="video/mp4">
                     Your browser does not support the video tag.
