@@ -5,102 +5,303 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thowfic Ibrahim Fazil | Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times New Roman;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Times New Roman', serif;
         }
         .header {
-            background-color: #333;
+            background: linear-gradient(45deg, #000, #000); 
             color: white;
-            padding: 1.5rem;
+            padding: 3rem;
             text-align: center;
+            border-bottom: 5px solid #fff;
         }
         .header h1 {
             margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
         }
-        .content {
-            padding: 2rem;
-        }
-        .section {
-            background-color: white;
-            margin: 1rem 0;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            color: #333;
-        }
-        .contact {
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .contact p {
-            color: #666;
-        }
-        .contact a {
-            color: #007acc;
-            text-decoration: none;
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
         }
 
-        /* Updated gallery styles */
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            background-color: #222;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        /* Adjust the gap between the lines in the Work Experience section */
+.work-experience ul {
+    list-style: disc inside;
+    padding: 0;
+    margin-top: 1rem;
+}
+       /* Remove bullet points for work experience headings */
+.work-experience > ul > li {
+    list-style-type: none; /* Remove bullet points from work experience titles */
+}
+
+/* Optional: To add some padding to each list item to make it look neat */
+.work-experience > ul > li {
+    padding: 5px 0;
+}
+
+
+.work-experience li {
+    margin-bottom: 1.5rem; /* Reduse the gap between lines */
+}
+
+
+        /* Gallery Section */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 1rem;
         }
 
-        .gallery img {
+        .gallery img, .gallery video {
             width: 100%;
-            height: auto; /* Ensure the image maintains its original aspect ratio */
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modal Animation for Larger View */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .modal-content-video {
+            width: 80%;
+            max-width: 700px;
+            margin: auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            background-color: #D44C91;
+            color: Black;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #000;
+            transform: scale(1.1);
+        }
+
+        .button:active {
+            transform: scale(1);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+
+        .contact a {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hover Effect for Links */
+        a:hover {
+            color: #D44C91;
+            text-decoration: underline;
+        }
+
+        /* Smooth Scroll Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF6F61;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            transition: transform 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #D44C91;
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
+
     <div class="header">
         <h1>Thowfic Ibrahim Fazil</h1>
-        <p>Creative Visual Storyteller | Dynamic compositions and crafting compelling narrative through videos</p>
+        <p>Creative Visual Storyteller | Dynamic compositions and compelling narrative through visuals</p>
     </div>
 
     <div class="content">
         <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
-            <p>I am a creative photographer and cinematographer with a passion for capturing dynamic compositions and crafting compelling narratives. With a Bachelor of Science in Forensic Science from Jain University, I seek to merge creativity and technical expertise in innovative projects.</p>
+            <p>I am a passionate photographer and cinematographer focused on visual storytelling. I specialize in capturing the essence of human emotion and dynamic scenes. With a BSc in Forensic Science, I seamlessly blend technical skills with creative vision.</p>
+        </div>
+
+        <!-- Work Experience Section -->
+<div class="section work-experience">
+    <h2>Work Experience</h2>
+    <ul>
+        <li><strong>Cinematographer</strong> - Captures of Tif
+            <ul>
+                <li>Directed and produced two short films: one exploring the theme of love and another based on a crime narrative.</li>
+                <li>Managed all aspects of production, including scripting, shooting, and editing.</li>
+                <li>Specialized in cinematic storytelling with an emphasis on lighting and composition.</li>
+            </ul>
+        </li>
+        <li><strong>Head of Photography Club</strong> - Jain University
+            <ul>
+                <li>Led a team to cover events and youth festivals through creative photography.</li>
+                <li>Organized workshops to mentor club members in photography and cinematography techniques.</li>
+            </ul>
+        </li>
+        <li><strong>Freelance Photographer</strong> - Captures of Tif
+            <ul>
+                <li>Captured high-quality portraits, landscapes, and event photography.</li>
+                <li>Built an online portfolio to attract clients and showcase creative work.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+        <!-- Achievements Section -->
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Directed two short films, praised for their storytelling and visuals.</li>
+                <li>Successfully led college photography events and workshops.</li>
+                <li>Built a growing Instagram portfolio for photography and cinematography.</li>
+            </ul>
         </div>
 
         <!-- Gallery Section -->
         <div class="section">
             <h2>Gallery</h2>
             <div class="gallery">
-                <img src="image/IMG_1.jpg" alt="car with wide angle Photography">
-                <img src="image/IMG_12.jpg" alt="A person sitting against intricate wallpaper with dramatic red and purple lighting, wearing a dark suit">
-                <img src="image/IMG_15.jpg" alt="Man in a navy blazer adjusting his collar with an intense and confident expression">
-                <img src="image/IMG_18.jpg" alt="Stylish man leaning against a reflective surface with dramatic lighting and shadows">
-                <img src="image/IMG_16.jpg" alt="Elegant woman in traditional attire standing outdoors with a serene expression">
-                <img src="image/IMG_19.jpg" alt="Woman in a red saree looking over her shoulder with long black hair flowing down">
-                <img src="image/IMG_2.jpg" alt="Creative street photography capturing vibrant colors and candid urban life moments">
-                <img src="image/IMG_3.jpg" alt="Two men sitting back-to-back on a rooftop under a cloudy sunset sky, symbolizing contrasting perspectives">
-                <img src="image/IMG_4.jpg" alt="Monochrome scene, illuminated by natural light">
+                <img src="image/IMG_12.jpg" alt="A person sitting against intricate wallpaper with dramatic lighting" onclick="openModal(this)">
+                <img src="image/IMG_15.jpg" alt="Man adjusting collar in a navy blazer with intense expression" onclick="openModal(this)">
+                <img src="image/IMG_18.jpg" alt="Stylish man leaning against reflective surface with dramatic shadows" onclick="openModal(this)">
+                <img src="image/IMG_16.jpg" alt="Elegant woman in traditional attire with serene expression" onclick="openModal(this)">
+                <img src="image/IMG_19.jpg" alt="Woman in red saree with flowing black hair" onclick="openModal(this)">
+                <img src="image/IMG_2.jpg" alt="Creative street photography capturing vibrant urban moments" onclick="openModal(this)">
+                <img src="image/IMG_3.jpg" alt="Two men sitting back-to-back on a rooftop under sunset sky" onclick="openModal(this)">
+                <img src="image/IMG_4.jpg" alt="Monochrome scene illuminated by natural light" onclick="openModal(this)">
                 <img src="image/IMG_5.jpg" alt="A driver's hand gripping the steering wheel of a Skoda car in a black-and-white interior">
                 <img src="image/IMG_6.jpg" alt="Photography of a dog">
                 <img src="image/IMG_7.jpg" alt="Monochrome scene of a rustic room with three men working under an exposed wooden roof, illuminated by natural light">
                 <img src="image/IMG_8.jpg" alt="A small, single-story house with a slanted roof and a parked motorcycle in front, in black and white">
                 <img src="image/IMG_9.jpg" alt="A person sitting against floral-patterned wallpaper with blue and pink lighting, face obscured by a red overlay">
+                <img src="image/IMG_10.jpg" alt="Three individuals walking along a forest path with golden sunlight filtering through the trees">
+                <img src="image/IMG_11.jpg" alt="A black-and-white coastal scene with waves crashing onto the shore, a long bridge with vehicles, and several boats near the shore">
                 <video controls>
-                    <source src="./IMG_20.mp4" type="video/mp4">
+                    <source src="image/IMG_20.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <video controls>
-                    <source src="./IMG_22.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="./IMG_21.mp4" type="video/mp4">
+                    <source src="image/IMG_22.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -110,57 +311,72 @@
         <div class="section">
             <h2>Relevant Skills</h2>
             <ul>
-                <li>Photography: Portrait, Landscape, and Cinematic styles</li>
-                <li>Editing Tools: Proficient in Adobe Lightroom and Photoshop</li>
-                <li>Cinematography: Video storytelling and short film production</li>
-                <li>Strong understanding of composition, lighting, and creative post-production</li>
-            </ul>
-        </div>
-
-        <!-- Work Experience Section -->
-        <div class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Cinematographer | Captures of Tif</strong>  
-                    <p>Directed and produced two short films: one exploring the theme of love and another based on a crime narrative. Managed all aspects of production, including scripting, shooting, and editing.</p>
-                </li>
-                <li><strong>Head of Photography Club | Jain University</strong>  
-                    <p>Led a team to cover events and youth festivals through creative photography. Organized workshops to mentor club members in photography and cinematography techniques.</p>
-                </li>
-                <li><strong>Freelance Photographer | Captures of Tif</strong>  
-                    <p>Captured high-quality portraits, landscapes, and event photography. Built an online portfolio to attract clients and showcase creative work.</p>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Education Section -->
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Forensic Science</strong><br>
-            Jain University, 2021 - 2024</p>
-        </div>
-
-        <!-- Achievements Section -->
-        <div class="section">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Directed two short films praised for storytelling and visuals</li>
-                <li>Successfully led college photography events and workshops</li>
-                <li>Built a growing Instagram portfolio for photography and cinematography</li>
+                <li>Photography: Portraits, Cinematic shots, Street and Landscape photography</li>
+                <li>Editing: Expertise in Adobe Lightroom, Photoshop, and Premiere Pro</li>
+                <li>Cinematography: Creative story-driven video production and direction</li>
+                <li>Post-Production: Advanced color grading and visual effects</li>
             </ul>
         </div>
 
         <!-- Contact Section -->
         <div class="contact">
             <h2>Contact</h2>
-            <p>Follow my photography journey on Instagram:</p>
-            <p><a href="https://www.instagram.com/your_instagram_id" target="_blank" style="text-decoration: none; color: #833AB4;">
-            <strong>@captures.of.tif</strong>
-            </a></p>
+            <p>Let's collaborate and create something amazing! Reach out to me for photography projects or cinematography work.</p>
+            <p><a href="https://www.instagram.com/your_instagram_id" target="_blank">@captures.of.tif</a></p>
             <p>Email: <a href="mailto:thowficibrahimfazil@gmail.com">thowficibrahimfazil@gmail.com</a></p>
             <p>Phone: 9342790750</p>
             <p>Location: Chennai, Tamil Nadu</p>
+            <a href="mailto:thowficibrahimfazil@gmail.com" class="button">Get in Touch</a>
         </div>
     </div>
+
+    <!-- Modal for Image and Video Enlargement -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <video class="modal-content-video" id="modalVideo" controls></video>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        ↑
+    </div>
+
+    <script>
+        // Open Modal Function for Images
+        function openModal(element) {
+            var modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modalImg");
+            var modalVideo = document.getElementById("modalVideo");
+
+            modal.style.display = "block";
+            if (element.tagName === "IMG") {
+                modalImg.src = element.src;
+                modalImg.style.display = "block";
+                modalVideo.style.display = "none";
+            } else if (element.tagName === "VIDEO") {
+                modalVideo.src = element.src;
+                modalVideo.style.display = "block";
+                modalImg.style.display = "none";
+            }
+        }
+
+        // Close Modal Function
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+
+        // Show/Hide Scroll to Top Button
+        window.onscroll = function() {
+            let scrollBtn = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        };
+    </script>
+
 </body>
 </html>
