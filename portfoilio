@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thowfic Ibrahim Fazil | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .contact p {
+            color: #666;
+        }
+        .contact a {
+            color: #007acc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Thowfic Ibrahim Fazil</h1>
+        <p>Creative Visual Storyteller | Cybersecurity Enthusiast</p>
+    </div>
+
+    <div class="content">
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a creative photographer, cinematographer, and cybersecurity enthusiast with a passion for capturing dynamic compositions and crafting compelling narratives. With a Bachelor of Science in Forensic Science from Jain University, I seek to merge creativity and technical expertise in innovative projects.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Relevant Skills</h2>
+            <ul>
+                <li>Photography: Portrait, Landscape, and Cinematic styles</li>
+                <li>Editing Tools: Proficient in Adobe Lightroom and Photoshop</li>
+                <li>Cinematography: Video storytelling and short film production</li>
+                <li>Strong understanding of composition, lighting, and creative post-production</li>
+            </ul>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Cinematographer | Captures of Tif</strong>  
+                    <p>Directed and produced two short films: one exploring the theme of love and another based on a crime narrative. Managed all aspects of production, including scripting, shooting, and editing.</p>
+                </li>
+                <li><strong>Head of Photography Club | Jain University</strong>  
+                    <p>Led a team to cover events and youth festivals through creative photography. Organized workshops to mentor club members in photography and cinematography techniques.</p>
+                </li>
+                <li><strong>Freelance Photographer | Captures of Tif</strong>  
+                    <p>Captured high-quality portraits, landscapes, and event photography. Built an online portfolio to attract clients and showcase creative work.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Forensic Science</strong><br>
+            Jain University, 2021 - 2024</p>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Directed two short films praised for storytelling and visuals</li>
+                <li>Successfully led college photography events and workshops</li>
+                <li>Built a growing Instagram portfolio for photography and cinematography</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:thowficibrahimfazil@gmail.com">thowficibrahimfazil@gmail.com</a></p>
+            <p>Phone: 9342790750</p>
+            <p>Location: Chennai, Tamil Nadu</p>
+        </div>
+    </div>
+</body>
+</html>
