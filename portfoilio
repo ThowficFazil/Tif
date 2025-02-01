@@ -78,7 +78,6 @@
             <h2>Gallery</h2>
             <div class="gallery">
                 <img src="image/IMG_1.jpg" alt="car with wide angle Photography">
-                <img src="image/IMG_9.jpg" alt="A person sitting against floral-patterned wallpaper with blue and pink lighting, face obscured by a red overlay">
                 <img src="image/IMG_12.jpg" alt="A person sitting against intricate wallpaper with dramatic red and purple lighting, wearing a dark suit">
                 <img src="image/IMG_15.jpg" alt="Man in a navy blazer adjusting his collar with an intense and confident expression">
                 <img src="image/IMG_18.jpg" alt="Stylish man leaning against a reflective surface with dramatic lighting and shadows">
@@ -91,6 +90,7 @@
                 <img src="image/IMG_6.jpg" alt="Photography of a dog">
                 <img src="image/IMG_7.jpg" alt="Monochrome scene of a rustic room with three men working under an exposed wooden roof, illuminated by natural light">
                 <img src="image/IMG_8.jpg" alt="A small, single-story house with a slanted roof and a parked motorcycle in front, in black and white">
+                <img src="image/IMG_9.jpg" alt="A person sitting against floral-patterned wallpaper with blue and pink lighting, face obscured by a red overlay">
                 <video controls>
                     <source src="./IMG_20.mp4" type="video/mp4">
                     Your browser does not support the video tag.
